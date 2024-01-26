@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuhuraira khan Shop</title>
+    <link rel="stylesheet" href="shop.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        :root{
+            --header-color: white;
+        }
+
+
+        #toggle{
+            left: 90%;
+            top: -28px;
+           position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+        }
+        #toggle input{
+            height: 0;
+            width: 0;
+        }
+        #mode-swi{
+            cursor: pointer;
+            height: 25px;
+            width: 55px;
+            background-color: #4b2c2c;
+            border-radius: 5px;
+            position: absolute;
+            
+
+        }
+        #mode-swi::before{
+            content: '';
+            height: 20px;
+            width: 26px;
+            left: 4px;
+            right: 4px;
+            top: 2px;
+            background-color: #15a167a9;
+            border-radius: 5px;
+            position: absolute;
+            transition: .5s;
+        }
+
+        input:focus + #mode-swi{
+            background-color: blue;
+        }
+        input:checked + #mode-swi{
+            box-shadow: 0 0 2px cyan;
+        }
+        input:checked + #mode-swi::before{
+            transform: translateX(20px);
+        }
+
+        .dark{
+            --header-color: white;
+            background-color: #464141;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+       <a href=""><abbr title="Home"><i class="fa-solid fa-house"></i></abbr></a>
+       <a href=""><abbr title="Profile"><i class="fa-solid fa-user"></i></abbr></a>
+       <a href=""><abbr title="Favorite"><i class="fa-solid fa-heart"></i></abbr></a>
+       <a href=""><abbr title="Check Cart"><i class="fa-solid fa-cart-shopping"></i></abbr></a>
+       <a href=""><i class="fa-solid fa-bars"></i></a>
+    
+    </div>
+    <div class="container">
+        <div class="logo">
+     <A href="">Abuhuraira Khan Shop</A>
+        </div>
+        <div class="searchArea">
+            <div class="searchbox">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search">
+            </div>
+        </div>
+        <div class="SECTION1">
+            <img src="photo/images.jpeg">
+
+        </div>
+         <div class="section1btn">
+            <h1>Wi<span color>nt</span>er</h1>
+                <h2>Collect<span class="color">ion</span></h2>
+            <button class="btn">Buy Now</button>
+         </div>
+
+         <div class="sideIcon">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+         </div>
+
+
+         <label id="toggle">
+            <input type="checkbox">
+            <span id="mode-swi" onclick="myFunction()"></span>
+         </label>
+        
+    </div>
+    <hr>
+
+    <!-------------------------------end header section------------------------->
+    <!-------------------------------end header section------------------------->
+    <!-------------------------------end header section------------------------->
+    <!-------------------------------end header section------------------------->
+
+    <section class="productsection">
+        <h3>New <span class="span2">Fashion</span> Collection</h3>
+
+        <div class="product">
+
+            <div class="product1">
+                <img src="photo/t-shirt-1.jpeg" alt="">
+                <p>New Black T Shirt</p>
+                <a href=""> 400 ৳</a>
+                <a class="buybtn" href="">Buy Now</a>
+            </div>
+            <div class="product1">
+                <img src="photo/t-shirt-1.jpeg" alt="">
+                <p>New Black T Shirt</p>
+                <a href=""> 400 ৳</a>
+                <a class="buybtn" href="">Buy Now</a>
+            </div>
+            <div class="product1">
+                <img src="photo/t-shirt-1.jpeg" alt="">
+                <p>New Black T Shirt</p>
+                <a href=""> 400 ৳</a>
+                <a class="buybtn" href="">Buy Now</a>
+            </div>
+            <div class="product1">
+                <img src="photo/t-shirt-2.jpeg" alt="">
+                <p>New Black T Shirt</p>
+                <a href=""> 400 ৳</a>
+                <a class="buybtn" href="">Buy Now</a>
+            </div>
+            <div class="product1">
+                <img src="photo/t-shirt-2.jpeg" alt="">
+                <p>New Black T Shirt</p>
+                <a href=""> 400 ৳</a>
+                <a class="buybtn" href="">Buy Now</a>
+            </div>
+            <div class="product1">
+                <img src="photo/t-shirt-2.jpeg" alt="">
+                <p>New Black T Shirt</p>
+                <a href=""> 400 ৳</a>
+                <a class="buybtn" href="">Buy Now</a>
+            </div>
+
+        </div>
+        
+    </section>
+    
+
+
+    <script>
+
+function myFunction(){
+    var lulu = document.body;
+    lulu.classList.toggle("dark");
+}
+
+    </script>
+
+    
+
+
+</body>
+</html>
