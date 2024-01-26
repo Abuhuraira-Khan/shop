@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a{
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1;
+    font-size: 2rem;
+}
+
+.searchArea{
+position: fixed; 
+right: 90px; 
+top: 50px;
+width: 150px;
+height: 40px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10%;
+box-shadow: 2px;
+box-sizing: border-box;
+z-index: 1;
+border: 1px solid black;
+}
+.searchbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+   background-color: transparent;
+   color: black ;
+   font-size: 1rem;
+   padding: 10px;
+}
+.SECTION1 {
+    left: 15%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-15%,-50%);
+}
+.SECTION1 img{
+    height: 300px;
+}
+.section1btn{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-80%);
+}
+.section1btn h1, h2{
+    font-family: Roboto;
+    line height: 60px;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #3d3d3d;
+    text-shadow: 2px #070404;
+}
+span{
+    color: #1f18a5;
+}
+.section1btn h1{
+    letter-spacing: 29px;
+}
+.section1btn button{
+     background-color: #db1478;
+     width: 120px;
+     height: 20px;
+     border-radius: 20px;
+     color: #ffffff;
+     border: none;
+     outline: none;
+    }
+    button:hover{
+        background-color:#1f18a5;
+        transform: 0.5s;
+    }
+
+    .sideIcon{
+      width: 20px;
+        margin-top: 20%;
+        margin-left: 2%;
+        position: fixed;
+      border-radius: 8px;
+      border: 0.5px solid black;
+      height: 160px;
+      line-height: 40px;
+    }
+    .sideIcon a{
+        color: #000000;
+    }
+   .productsection h3{
+    margin: 20px;
+    font-family: myriad pro;
+    font-weight: 700px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+    border: 0.2px solid black;
+   }
+   .product{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+
+   }
+   .product1{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 20px;
+   }
+   .product1 p{
+    color: gray;
+   }
+   .product1 a{
+    color: black;
+   }
+   .buybtn{
+    justify-content: center;
+    background-color: #a51818;
+    border-radius: 10px;
+    color:#ffffff;
+    width: 100px;
+    height: 20px;
+    display: none;
+    animation: fade 0.2s;
+    align-items: center;
+    font-family: roboto;
+   }
+   .product1:hover .buybtn{
+    background-color: #a51818;
+    display: flex;
+   }
+   .product1:hover{
+    background-color: bisque;
+    border-radius: 20px;
+   }
+   .header{
+background-color: var( --header-color: white;);
+    letter-spacing: 50px;
+    text-align: center;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+   }
+   .header i{
+    color: #000000;
+   }
+   
+   
+  
+   
