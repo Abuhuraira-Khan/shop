@@ -66,11 +66,47 @@
             background-color: #464141;
             color: white;
         }
+        /*---preoloader section ----*/         /*---preoloader section ----*/
+        #main-spin{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            background: transparent;
+            backdrop-filter: blur(5px);
+        }
+        #spin{
+            margin-left: 45%;
+            margin-top: 18%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border-top: 5px solid #1f18a5 !important;
+            border: 5px solid #f1f1f1;
+            animation: spinA 2s linear infinite;
+        }
+
+        @keyframes spinA{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
 
     </style>
 
 </head>
 <body>
+
+    <div id="main-spin">
+        <div id="spin">
+
+        </div>
+    </div>
+    
     <div class="header">
        <a href=""><abbr title="Home"><i class="fa-solid fa-house"></i></abbr></a>
        <a href=""><abbr title="Profile"><i class="fa-solid fa-user"></i></abbr></a>
@@ -126,19 +162,19 @@
         <div class="product">
 
             <div class="product1">
-                <img src="photo/t-shirt-1.jpeg" alt="">
+                <img src="t-shirt-1.jpeg" alt="">
                 <p>New Black T Shirt</p>
                 <a href=""> 400 ৳</a>
                 <a class="buybtn" href="">Buy Now</a>
             </div>
             <div class="product1">
-                <img src="photo/t-shirt-1.jpeg" alt="">
+                <img src="t-shirt-1.jpeg" alt="">
                 <p>New Black T Shirt</p>
                 <a href=""> 400 ৳</a>
                 <a class="buybtn" href="">Buy Now</a>
             </div>
             <div class="product1">
-                <img src="photo/t-shirt-1.jpeg" alt="">
+                <img src="t-shirt-2.jpeg" alt="">
                 <p>New Black T Shirt</p>
                 <a href=""> 400 ৳</a>
                 <a class="buybtn" href="">Buy Now</a>
@@ -175,6 +211,13 @@ function myFunction(){
     lulu.classList.toggle("dark");
 }
 
+// preloader section ////
+        
+        window.addEventListener("DOMContentLoaded", function(){
+            let load = document.querySelector("#main-spin");
+            load.style.display="none"
+        })
+        
     </script>
 
     
